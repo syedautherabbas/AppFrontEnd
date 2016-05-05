@@ -53,7 +53,7 @@ myApp
 												function(response) {
 													console
 															.log("GET  REQ FOR ALL SURAH SUCCESS ");
-
+    
 													$scope.surahlist = response;
 
 												});
@@ -83,7 +83,7 @@ myApp
                     .success(
                         function(response) {
                           console
-                              .log("GET  REQ FOR ALL SURAH SUCCESS ");
+                              .log("GET  REQ FOR ALL random ayat SUCCESS ");
 
                           $scope.ayat = response;
 
