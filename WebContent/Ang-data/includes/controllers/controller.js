@@ -99,13 +99,13 @@ myApp
 
 							$scope.displaychapter = function() {
 
-								console.log($scope.ayat);
+								console.log($scope.selectedayat);
 
 							}
 							
 							$scope.onsurahselect = function() {
 								
-								var temp1 = $scope.ayat;
+								var temp1 = $scope.selectedayat;
 //								var temp2=temp1.chapter.split(':');
 							var surahNumber=temp1.chapter;
 							console.log(surahNumber+" on surah change")

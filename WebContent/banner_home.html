@@ -30,7 +30,7 @@
                
                <div class="form-group">
   <label for="sel1">Chapter :</label>
-  <select class="form-control" id="sel1" ng-model="ayat.chapter" ng-change="onsurahselect()">
+  <select class="form-control" id="sel1" ng-model="selectedayat.chapter" ng-change="onsurahselect()">
     <option ng-repeat="surah in surahlist">{{surah.surahnumber}} </option>
  
   </select>
@@ -38,14 +38,14 @@
 
 <div class="form-group">
   <label for="sel2">Verse:</label>
-  <select class="form-control" id="sel2" ng-model="ayat.verse" ng-change="onverseSelect()">
+  <select class="form-control" id="sel2" ng-model="selectedayat.verse" ng-change="onverseSelect()">
     <option ng-repeat="verse in ayatlist">{{verse.verse}}</option>
  
   </select>
 </div>
 
               <br> 
-             <div class="row pullrt2">   <a ng-href="#/surah/{{ayat.chapter}}/ayat/{{ayat.verse}}" class="btn btn-danger " value="Read" ng-click="displaychapter()"> Read</a> </div>
+             <div class="row pullrt2">   <a ng-href="#/surah/{{selectedayat.chapter}}/ayat/{{selectedayat.verse}}" class="btn btn-danger " value="Read" ng-click="displaychapter()"> Read</a> </div>
            </div>
            
                   <div class="col-md-8 ">
