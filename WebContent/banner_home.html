@@ -76,7 +76,7 @@
  <div  class="col-lg-4 "  ng-class="{surahnamefocus: hover}" 
     ng-mouseenter="hover = true"
     ng-mouseleave="hover = false" ng-repeat="data in surahlist" >
-            <a ng-href="#/surah/{{data.surahnumber}}"><span class="text-uppercase  mediumfont surahicons"> <div class="text-center"> {{data.surahnumber}} </div> <div class="text-center"> {{data.surahname}} </div> <div class="text-center"> </div> <div class="text-center">{{data.translation}}</div>     	</span> </a>
+            <a class="remul surahicons" ng-href="#/surah/{{data.surahnumber}}"> <div class="text-center"> {{data.surahnumber}} </div> <div class="text-center arabicdisplay"> {{data.propername}} - {{data.arabicname}} </div> <div class="text-center"> </div> <div class="text-center">{{data.translation}}</div>      </a>
              
               
                 </div>
